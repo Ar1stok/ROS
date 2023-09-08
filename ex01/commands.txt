@@ -1,0 +1,31 @@
+# cat - печатает содержимое файла
+	root@ubuntu:~# cat <file name>
+
+# grep - помогает найти определенную строку в выводе
+	root@ubuntu:~# <Any command with output> | grep "<string to find>"
+
+# sort - обеспечит отсортированный вывод содержимого файла
+	root@ubuntu:~# sort <filename>
+
+# ps - получить список запущенных процессов
+	root@ubuntu:~ -->> ps 
+
+# chmod - позволяет изменять права доступа к файлам
+	root@ubuntu:~ -->> chmod +x loop.sh
+
+# chow - позволяет менять владельцев файлов
+	root@ubuntu:~ -->> chmod root:root loop.sh
+
+# ifconfig - предоставит список всех сетевых интерфейсов
+	root@ubuntu:~ -->> ifconfig
+
+# cal - отображает календарь
+	root@ubuntu:~# cal
+
+# service - используется для запуска и остановки различных служб в операционной системе
+	root@ubuntu:~ -->> service ssh status
+	root@ubuntu:~ -->> service ssh stop
+	root@ubuntu:~ -->> service ssh start
+
+# uname - позволяют узнать некоторую базовую информацию, которая очень полезна при работе с несколькими системами
+	root@ubuntu:~# uname -a
