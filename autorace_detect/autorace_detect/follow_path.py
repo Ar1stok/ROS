@@ -221,8 +221,8 @@ class Follow_Trace_Node(Node):
             check_direction(self, cvImg)
         
         # попытка остановиться
-        if self.TASK_LEVEL == 2 and (time.time() - self.START_TIME) > 12.5:
-            self.STATUS_CAR = 0
+        if self.TASK_LEVEL == 2 and (time.time() - self.START_TIME) > 15:
+            # self.STATUS_CAR = 0 - изменять необязательно, можно ботика не останавливать
             self._msg.data = "autorace_data"
             self._sign_finish.publish(self._msg)   
         
